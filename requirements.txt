@@ -1,0 +1,5 @@
+# Runtime dependencies of the worker (pinned for reproducible images).
+runpod==1.12.0
+boto3==1.43.87
+pydantic==2.13.5
+requests==2.34.2

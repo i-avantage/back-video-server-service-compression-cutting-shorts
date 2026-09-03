@@ -1,0 +1,19 @@
+{
+  "input": {
+    "input_url": "https://example-bucket.s3.amazonaws.com/inputs/interview.mp4?X-Amz-Signature=...",
+    "video": {
+      "codec": "h264",
+      "preset": "p5",
+      "rate_control": "cq",
+      "cq": 23,
+      "max_height": 1080
+    },
+    "audio": { "codec": "aac", "bitrate": "128k" },
+    "container": "mp4",
+    "output": {
+      "type": "s3",
+      "key": "outputs/interview_1080p.mp4",
+      "overwrite": true
+    }
+  }
+}

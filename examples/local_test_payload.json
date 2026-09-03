@@ -1,0 +1,8 @@
+{
+  "input": {
+    "input_url": "local_output/sample_input.mp4",
+    "video": { "codec": "h264", "cq": 24, "max_height": 480 },
+    "output": { "type": "local", "path": "local_output/from_payload.mp4", "overwrite": true },
+    "options": { "fallback_to_software": true }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "input": {
+    "input_url": "s3://my-input-bucket/raw/keynote_4k.mov",
+    "name": "keynote_1080p",
+    "video": {
+      "codec": "hevc",
+      "preset": "p6",
+      "rate_control": "vbr",
+      "bitrate": "6M",
+      "max_bitrate": "9M",
+      "max_width": 1920,
+      "max_height": 1080,
+      "fps": 30
+    },
+    "audio": { "codec": "aac", "bitrate": "160k", "channels": 2 },
+    "output": { "type": "s3", "bucket": "my-output-bucket", "key": "delivery/keynote_1080p.mp4", "presign_ttl": 86400 },
+    "options": { "timeout_seconds": 5400 }
+  },
+  "policy": { "executionTimeout": 5400000 }
+}

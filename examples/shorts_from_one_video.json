@@ -1,0 +1,16 @@
+{
+  "input": {
+    "input_url": "https://cdn.example.com/podcast_episode.mp4?token=...",
+    "name": "episode12",
+    "video": { "codec": "h264", "cq": 23, "width": 1080, "height": 1920 },
+    "audio": { "codec": "aac", "bitrate": "128k" },
+    "aspect": { "ratio": "9:16", "mode": "crop", "anchor": "center" },
+    "clips": [
+      { "name": "hook",   "trim": { "start": "00:02:10", "duration": 45 } },
+      { "name": "quote",  "trim": { "start": "00:17:05", "end": "00:17:58" } },
+      { "name": "outro",  "trim": { "start": "00:41:00", "duration": 30 }, "aspect": { "ratio": "9:16", "mode": "pad", "pad_color": "black" } }
+    ],
+    "output": { "type": "s3", "key": "shorts/episode12.mp4", "overwrite": true }
+  },
+  "policy": { "executionTimeout": 1800000 }
+}

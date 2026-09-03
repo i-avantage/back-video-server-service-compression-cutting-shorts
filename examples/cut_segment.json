@@ -1,0 +1,9 @@
+{
+  "input": {
+    "input_url": "https://cdn.example.com/webinar.mp4?token=...",
+    "name": "webinar_intro",
+    "trim": { "start": "00:01:30", "end": "00:04:00" },
+    "video": { "codec": "h264", "cq": 22 },
+    "output": { "type": "presigned_put", "url": "https://my-output-bucket.s3.amazonaws.com/webinar_intro.mp4?X-Amz-Signature=..." }
+  }
+}
